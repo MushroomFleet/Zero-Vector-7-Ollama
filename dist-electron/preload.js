@@ -1,0 +1,1 @@
+"use strict";const o=require("electron");o.contextBridge.exposeInMainWorld("electronAPI",{platform:process.platform,versions:{node:process.versions.node,chrome:process.versions.chrome,electron:process.versions.electron},onUpdateAvailable:e=>{o.ipcRenderer.on("update-available",(n,r)=>e(r))},onUpdateDownloaded:e=>{o.ipcRenderer.on("update-downloaded",()=>e())}});
