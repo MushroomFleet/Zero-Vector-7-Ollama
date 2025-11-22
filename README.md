@@ -429,3 +429,24 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Storage**: 5GB+ for core models (varies by model size)
 - **CPU**: Modern multi-core processor (GPU acceleration supported where available)
 - **Network**: Internet required only for initial model downloads and cloud provider usage
+
+## 📚 Citation
+
+### Academic Citation
+
+If you use this codebase in your research or project, please cite:
+
+```bibtex
+@software{zero-vector_7_ollama,
+  title = {Zero Vector 7 Ollama: sophisticated multi-lobe cognitive AI system with holographic memory reconstruction, real-time thinking visualization, and complete privacy through local AI processing},
+  author = {[Drift Johnson]},
+  year = {2025},
+  url = {https://github.com/MushroomFleet/Zero-Vector-7-Ollama},
+  version = {1.0.0}
+}
+```
+
+### Donate:
+
+
+[![Ko-Fi](https://cdn.ko-fi.com/cdn/kofi3.png?v=3)](https://ko-fi.com/driftjohnson)
