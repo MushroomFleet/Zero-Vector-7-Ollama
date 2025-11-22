@@ -1,0 +1,422 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ZV6 Enhanced Neural Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* NSL Background Colors */
+    --background: 250 24% 10%;
+    --foreground: 250 10% 98%;
+    
+    /* NSL Card & Elevated Surfaces */
+    --card: 250 20% 14%;
+    --card-foreground: 250 10% 98%;
+    
+    /* NSL Popover/Overlay */
+    --popover: 250 24% 12%;
+    --popover-foreground: 250 10% 98%;
+    
+    /* NSL Primary (Purple/Violet) */
+    --primary: 263 70% 60%;
+    --primary-foreground: 250 10% 98%;
+    --primary-glow: 263 80% 70%;
+    
+    /* NSL Accent (Golden/Amber) */
+    --accent: 38 92% 50%;
+    --accent-foreground: 250 24% 10%;
+    --accent-glow: 38 100% 60%;
+    
+    /* NSL Secondary */
+    --secondary: 250 15% 20%;
+    --secondary-foreground: 250 10% 98%;
+    
+    /* NSL Muted */
+    --muted: 250 15% 18%;
+    --muted-foreground: 250 10% 65%;
+    
+    /* NSL Semantic Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 250 10% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 250 10% 98%;
+    
+    /* NSL Borders & Inputs */
+    --border: 250 15% 22%;
+    --input: 250 15% 22%;
+    --ring: 263 70% 60%;
+    
+    /* NSL Chart Colors */
+    --chart-1: 263 70% 60%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 263 80% 70%;
+    --chart-4: 38 100% 60%;
+    --chart-5: 250 15% 20%;
+    
+    /* Border Radius */
+    --radius: 0.75rem;
+    
+    /* NSL Neural System Colors */
+    --neural-primary: 263 70% 60%;
+    --neural-secondary: 263 80% 70%;
+    --neural-accent: 263 70% 60%;
+    --synapse-primary: 38 92% 50%;
+    --synapse-secondary: 250 15% 25%;
+    --synapse-active: 38 92% 50%;
+    --synapse-inactive: 250 15% 25%;
+    --electric-primary: 38 100% 60%;
+    --electric-secondary: 250 15% 25%;
+    --electric-pulse: 38 100% 60%;
+    --cognitive-deep: 250 24% 10%;
+    --cognitive-surface: 250 20% 14%;
+    --cognitive-bg: 250 20% 14%;
+    --cognitive-border: 250 15% 22%;
+    --cognitive-text: 250 10% 98%;
+
+    /* NSL Gradients - Primary (Purple) */
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 60%) 0%, hsl(263 80% 70%) 100%);
+    --gradient-neural: linear-gradient(135deg, hsl(263 70% 60%), hsl(263 80% 70%));
+    
+    /* NSL Gradients - Accent (Golden) */
+    --gradient-accent: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(38 100% 60%) 100%);
+    
+    /* NSL Gradients - Subtle (Background depth) */
+    --gradient-subtle: linear-gradient(180deg, hsl(250 20% 14%) 0%, hsl(250 24% 10%) 100%);
+    --gradient-synapse: linear-gradient(90deg, hsl(38 92% 50%), hsl(263 70% 60%));
+    
+    /* Background gradient for page */
+    --gradient-background: radial-gradient(ellipse at top, hsl(263 70% 60% / 0.1) 0%, transparent 50%),
+                           radial-gradient(ellipse at bottom, hsl(38 92% 50% / 0.1) 0%, transparent 50%);
+
+    /* NSL Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(263 70% 30% / 0.4);
+    --shadow-glow: 0 0 40px hsl(263 80% 70% / 0.3);
+    --shadow-accent: 0 4px 20px hsl(38 92% 50% / 0.3);
+    --shadow-neural: 0 10px 30px -10px hsl(263 70% 60% / 0.3);
+    --shadow-electric: 0 5px 20px -5px hsl(38 92% 50% / 0.4);
+
+    /* NSL Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.6s ease-in-out;
+    --transition-fast: all 150ms ease;
+    --transition-base: all 300ms ease;
+    --transition-slow: all 500ms ease;
+    --transition-neural: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* NSL Background Colors */
+    --background: 250 24% 10%;
+    --foreground: 250 10% 98%;
+    
+    /* NSL Card & Elevated Surfaces */
+    --card: 250 20% 14%;
+    --card-foreground: 250 10% 98%;
+    
+    /* NSL Popover/Overlay */
+    --popover: 250 24% 12%;
+    --popover-foreground: 250 10% 98%;
+    
+    /* NSL Primary (Purple/Violet) */
+    --primary: 263 70% 60%;
+    --primary-foreground: 250 10% 98%;
+    --primary-glow: 263 80% 70%;
+    
+    /* NSL Accent (Golden/Amber) */
+    --accent: 38 92% 50%;
+    --accent-foreground: 250 24% 10%;
+    --accent-glow: 38 100% 60%;
+    
+    /* NSL Secondary */
+    --secondary: 250 15% 20%;
+    --secondary-foreground: 250 10% 98%;
+    
+    /* NSL Muted */
+    --muted: 250 15% 18%;
+    --muted-foreground: 250 10% 65%;
+    
+    /* NSL Semantic Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 250 10% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 250 10% 98%;
+    
+    /* NSL Borders & Inputs */
+    --border: 250 15% 22%;
+    --input: 250 15% 22%;
+    --ring: 263 70% 60%;
+    
+    /* NSL Chart Colors */
+    --chart-1: 263 70% 60%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 263 80% 70%;
+    --chart-4: 38 100% 60%;
+    --chart-5: 250 15% 20%;
+    
+    /* Border Radius */
+    --radius: 0.75rem;
+    
+    /* NSL Neural System Colors */
+    --neural-primary: 263 70% 60%;
+    --neural-secondary: 263 80% 70%;
+    --synapse-active: 38 92% 50%;
+    --synapse-inactive: 250 15% 25%;
+    --electric-pulse: 38 100% 60%;
+    --cognitive-deep: 250 24% 10%;
+    --cognitive-surface: 250 20% 14%;
+    
+    /* NSL Dark Mode Gradients */
+    --gradient-neural-primary: linear-gradient(135deg, hsl(263 70% 60%), hsl(263 80% 70%));
+    --gradient-neural-secondary: linear-gradient(180deg, hsl(263 80% 70%), hsl(263 70% 60%));
+    --gradient-accent-primary: linear-gradient(135deg, hsl(38 92% 50%), hsl(38 100% 60%));
+    
+    /* NSL Dark Mode Shadows */
+    --shadow-neural: 0 10px 30px -10px hsl(263 70% 60% / 0.3);
+    --glow-neural: 0 0 40px hsl(263 70% 60% / 0.4);
+    --shadow-accent: 0 4px 20px hsl(38 92% 50% / 0.3);
+    
+    /* Cognitive System Colors */
+    --cognitive-bg: 250 20% 14%;
+    --cognitive-border: 250 15% 22%;
+    --cognitive-text: 250 10% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    min-height: 100vh;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* NSL Heading Styles */
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold;
+    letter-spacing: -0.025em;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+    letter-spacing: -0.025em;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+    letter-spacing: -0.025em;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-semibold;
+    letter-spacing: -0.025em;
+  }
+  
+  h5 {
+    @apply text-lg md:text-xl font-semibold;
+    letter-spacing: -0.025em;
+  }
+  
+  h6 {
+    @apply text-base md:text-lg font-semibold;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* NSL-inspired utility classes */
+@layer utilities {
+  /* NSL Glow Effects - Purple Primary */
+  .neural-glow {
+    box-shadow: var(--shadow-elegant);
+    transition: var(--transition-glow);
+  }
+
+  .neural-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* NSL Accent Effects - Golden */
+  .electric-glow {
+    box-shadow: var(--shadow-accent);
+  }
+  
+  .accent-glow:hover {
+    box-shadow: 0 0 40px hsl(38 92% 50% / 0.4);
+  }
+
+  /* NSL Transitions */
+  .cognitive-transition {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+  
+  .transition-base {
+    transition: var(--transition-base);
+  }
+  
+  .transition-slow {
+    transition: var(--transition-slow);
+  }
+
+  /* NSL Gradients */
+  .gradient-neural {
+    background: var(--gradient-neural);
+  }
+
+  .gradient-synapse {
+    background: var(--gradient-synapse);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* NSL Text Colors */
+  .text-neural {
+    color: hsl(var(--neural-primary));
+  }
+
+  .text-synapse {
+    color: hsl(var(--synapse-active));
+  }
+
+  .text-electric {
+    color: hsl(var(--electric-pulse));
+  }
+
+  /* NSL Background Colors */
+  .bg-cognitive {
+    background: hsl(var(--cognitive-bg));
+  }
+
+  .border-cognitive {
+    border-color: hsl(var(--cognitive-border));
+  }
+
+  /* NSL Animations */
+  .neural-pulse {
+    animation: neural-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  /* NSL Reduced Motion Support */
+  @media (prefers-reduced-motion: reduce) {
+    .transition-smooth,
+    .transition-fast,
+    .transition-base,
+    .transition-slow,
+    .cognitive-transition {
+      transition: none;
+    }
+    
+    .animate-slide-up,
+    .animate-slide-down,
+    .animate-fade-in,
+    .animate-scale-in,
+    .animate-glow,
+    .animate-pulse-glow,
+    .neural-pulse,
+    .pulse-glow {
+      animation: none;
+    }
+  }
+}
+
+/* NSL Keyframe Animations */
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes neural-glow {
+  0% { 
+    box-shadow: 0 0 5px hsl(var(--neural-primary));
+  }
+  100% { 
+    box-shadow: 0 0 20px hsl(var(--neural-primary)), 0 0 30px hsl(var(--neural-primary));
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 hsl(263 70% 60% / 0);
+  }
+  50% {
+    box-shadow: 0 0 30px hsl(263 70% 60% / 0.5);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 hsl(263 70% 60% / 0);
+  }
+  100% {
+    box-shadow: 0 0 20px hsl(263 70% 60% / 0.4);
+  }
+}
